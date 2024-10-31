@@ -6,11 +6,26 @@ using System.Reflection;
 using static Algorithms.Search;
 using static Algorithms.Sorting;
 using static Algorithms.Recursion;
+using  Algorithms;
+using static Algorithms.HashStructure<T>;
 
 
 
 Random random = new Random();
 Stopwatch stopwatch = new Stopwatch();
+
+HashStructure<int> hashTable = new HashStructure<int>();
+Node<int> node = new("Adidas", 30590);
+Node<int> node2 = new("Ball", 20);
+Node<int> node3 = new("Ball", 45);
+Node<int> node4 = new("Ball", 45);
+Node<int> node5 = new("Ball", 24);
+hashTable.Add(node);
+hashTable.Add(node2);
+hashTable.Add(node3);
+hashTable.Add(node4);
+hashTable.Add(node5);
+
 
 int[] numberArray = new int[16];
 for (int i = 0; i < numberArray.Length; i++)
