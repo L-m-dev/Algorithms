@@ -17,7 +17,6 @@ namespace Algorithms {
     public class HashStructure<T> {
         private Node<T> Node { get; set; }
         private LinkedList<Node<T>>[] Table { get; set; }
-
         private int _bucketQuantity;
         private int _occupiedBuckets;
 
@@ -31,10 +30,9 @@ namespace Algorithms {
             if (node.Key.Length < 1) {
                 throw new ArgumentException(nameof(node), "Key needs minimum 1 length.");
             }
-
             int asciiValue = AsciiSumOfString(node.Key);
-
             int bucket = asciiValue % _bucketQuantity;
+
             return bucket;
         }
 
@@ -63,7 +61,6 @@ namespace Algorithms {
                 }
                 array = newArray;
             }
-
         }
 
         private void GetLoadFactor() {
@@ -78,7 +75,6 @@ namespace Algorithms {
                     _occupiedBuckets++;
                 }
             }
-
         }
 
         public void Add(Node<T> node) {
@@ -127,10 +123,8 @@ namespace Algorithms {
                 if (item.Key == node.Key) {
                     return item;
                 }
-
             }
-            return null;            
+            return null;
         }
-
-     }
+    }
 }
