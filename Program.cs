@@ -15,16 +15,20 @@ Random random = new Random();
 Stopwatch stopwatch = new Stopwatch();
 
 HashStructure<int> hashTable = new HashStructure<int>();
-Node<int> node = new("Adidas", 30590);
-Node<int> node2 = new("Ball", 20);
-Node<int> node3 = new("Cadre", 45);
-Node<int> node4 = new("Garth", 45);
-Node<int> node5 = new("Jeez", 24);
-hashTable.Add(node);
-hashTable.Add(node2);
-hashTable.Add(node3);
-hashTable.Add(node4);
-hashTable.Add(node5);
+ 
+hashTable.Add("Adidas", 233);
+hashTable.Add("Love", 233);
+hashTable.Add("Marks", 233);
+hashTable.Add("Jobele", 233);
+hashTable.Add("Jacc", 233);
+hashTable.Add("Jawcc", 233);
+hashTable.Add("Jrwtacc", 233);
+
+hashTable.Remove("Adidas");
+hashTable.Remove("Love");
+hashTable.Remove("Marks");
+hashTable.Remove("Jobele");
+  
 
 
 int[] numberArray = new int[16];
